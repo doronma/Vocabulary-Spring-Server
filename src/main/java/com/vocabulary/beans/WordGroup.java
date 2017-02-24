@@ -1,9 +1,11 @@
-package beans.vocabulary;
+package com.vocabulary.beans;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+
+
 
 public class WordGroup {
 	@Id
@@ -19,7 +21,8 @@ public class WordGroup {
 		super();
 		this.groupName = groupName;
 	}
-
+	
+	
 	public String getId() {
 		return id;
 	}
@@ -35,7 +38,7 @@ public class WordGroup {
 	public void setGroupName(String groupName) {
 		this.groupName = groupName;
 	}
-
+	
 	public List<Word> getWordList() {
 		return wordList;
 	}
@@ -50,7 +53,7 @@ public class WordGroup {
 	
 	@Override
 	public String toString() {
-		return wordList.toString();
+		return groupName + ": " + wordList.toString();
 		
 	}
 	

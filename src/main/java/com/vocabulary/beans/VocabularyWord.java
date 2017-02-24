@@ -1,4 +1,4 @@
-package beans.vocabulary;
+package com.vocabulary.beans;
 
 import org.springframework.data.annotation.Id;
 
